@@ -1,0 +1,217 @@
+body {
+    background-color: rgba(145, 34, 87, 0.9);
+    position: relative;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Navbar */
+/* taustan väri */
+.navbar-custom {
+    background-color: rgba(137, 17, 76, 0.9);
+}
+
+/* brandin ja tekstin väri */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(241, 135, 187, 0.8);
+    font-family: 'Train One', cursive;
+}
+
+/* linkin väri */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(241, 135, 187, 0.8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+/* aktiivisen & hover-linkin väri */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.nav-item .dropdown-menu {
+    border: 1px solid pink;
+}
+
+.nav-item .dropdown-menu a:hover {
+    color: white !important;
+    background: pink !important;
+    cursor: pointer;
+}
+
+.dropdown-menu a.active {
+    background-color: rgba(137, 17, 76, 0.9) !important;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+    min-height: 200px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffcccc' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffcccc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.container-fluid {
+    background-color: rgba(145, 34, 87, 0.9);
+    color: white;
+    text-align: center;
+}
+
+
+/* Grid */
+#ravintola {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.ravintolakuva {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30% 0% 30% 0%;
+    padding: 20px;
+}
+
+
+/* Tabs */
+.nav-link {
+    color: rgba(241, 135, 187, 0.8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-tabs a.active {
+    background-color: rgba(145, 34, 87, 0.9) !important;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+
+/* Card */
+#alacarte {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.card-group {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+/* Accordion */
+#juomat {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.card-header {
+    background-color: rgba(137, 17, 76, 0.9) !important;
+    text-align: left;
+}
+
+.accordion-card {
+    color: black;
+}
+
+.card-link {
+    color: white !important;
+}
+
+.juomakuva {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5%;
+}
+
+
+/* Responsive Table */
+#yhteystiedot {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+th,
+td {
+    color: white;
+}
+
+/* Form */
+#palauteform {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+label.muoto1 {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+    vertical-align: top;
+}
+
+label.muoto2 {
+    display: inline-block;
+    width: 15em;
+    text-align: left;
+}
+
+::placeholder {
+    color: rgba(241, 135, 187, 0.8);
+}
+
+input[type=submit], input[type=reset] {
+    color: rgba(137, 17, 76, 0.9);
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(241, 135, 187, 0.8);
+}
+
+input[type=reset]:hover {
+    background-color: rgba(137, 17, 76, 0.9);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}

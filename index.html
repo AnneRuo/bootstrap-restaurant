@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Stylesheets -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Train+One&display=swap" rel="stylesheet">
+    <!--bootsrapin CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="container" id="alku">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <a class="navbar-brand" href="#alku">
+                <img src="logo.png" alt="logo" style="width:45px;"> Tico Restaurant</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false"
+                arialabel="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alku">Etusivu <span class="sr-only">
+                                (current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ravintola">Ravintola</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#menu" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#lounas">Lounas</a>
+                            <a class="dropdown-item" href="#alacarte">A la carte</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#juomat">Juomat</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#yhteystiedot">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" id="carousel">
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="salaatti1.jpg" alt="salaatti">
+                    <div class="carousel-caption">
+                        <h3>Raikkaat salaatit</h3>
+                        <p>Kun kaipaat jotain kevyttä ja raikasta</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="annos10.jpg" alt="lihaa">
+                    <div class="carousel-caption">
+                        <h3>Kaupungin parhaat pihvit</h3>
+                        <p>Kun lihanhimo iskee</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pizza1.jpg" alt="pizza">
+                    <div class="carousel-caption">
+                        <h3>Aidot kiviuunipizzat</h3>
+                        <p>Kun kaipaat rennompaa illallista</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="jade2.jpg" alt="jäätelö">
+                    <div class="carousel-caption">
+                        <h3>Herkulliset jäätelöannokset</h3>
+                        <p>Kruunaa mahtavan ravintolakokemuksen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+
+    <div class="container-fluid" id="ravintola">
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src="ravintola1.jpg" alt="ravintola" class="ravintolakuva">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Tico Restaurant</h3>
+                <p>Tule nauttimaan hyvästä ruuasta ja laajasta juomavalikoimastamme
+                    tunnelmalliseen ympäristöön. Löydät meidät Pasilan aseman kupeesta, Ratapihantie 13.</p>
+                <p>Auki:<br>
+                    su - to 10:30 - 20:00<br>
+                    pe - la 10:30 - 22:00</p>
+            </div>
+
+            <div class="col-md-4">
+                <img src="poyta1.jpg" alt="ravintolapöytä" class="ravintolakuva">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="lounas">
+        <h3>Lounas viikko 25</h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item lounas">
+                <a class="nav-link lounas active" data-toggle="tab" href="#keitto">Keitto</a>
+            </li>
+            <li class="nav-item lounas">
+                <a class="nav-link lounas" data-toggle="tab" href="#liha">Lounas 1</a>
+            </li>
+            <li class="nav-item lounas">
+                <a class="nav-link lounas" data-toggle="tab" href="#kasvis">Lounas 2</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active container" id="keitto">
+                Maanantai:<br> Kermainen porkkana-inkiväärikeitto<br><br>
+                Tiistai:<br> Paahdettu paprikakeitto<br><br>
+                Keskiviikko:<br> Kermainen katkarapukeitto<br><br>
+                Torstai:<br> Hernekeitto<br><br>
+                Perjantai:<br> Tomaatti-tuorejuustokeitto<br><br>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZBvmDNunH_c"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tab-pane container" id="liha">
+                Maanantai:<br> Kana-vuohenjuustopastaa, rucolaöljyä ja paahdettuja siemeniä <br><br>
+                Tiistai:<br> Kanan sisäfileetä sitruuna-persiljakastikkeella <br><br>
+                Keskiviikko:<br> Fish and chips ja wasabimajoneesia<br><br>
+                Torstai:<br> Maissipaneroitua kanaa ja tzatzikia<br><br>
+                Perjantai:<br> Katkarapuja, riisinuudelia ja kermaista inkivääri-chili kastiketta <br><br>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eQ6ZJ2wjMnQ"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="tab-pane container" id="kasvis">
+                Maanantai:<br> Rucolapestopastaa, fetaa ja paahdettua paprikaa<br><br>
+                Tiistai:<br> Aurinkotomaattipastaa, ricottajuustoa ja rucolaa <br><br>
+                Keskiviikko:<br> Vuohenjuustosalaatti ja sitruunavinaigretteä <br><br>
+                Torstai:<br> Paahdettua kurpitsaa, limemarinoitua porkkanaa, rapeaa maapähkinää, chiliä, korianteria ja
+                kardemummariisiä<br><br>
+                Perjantai:<br> Sitruuna-parsasalaattia, balsamicosiirappia ja parmesaania <br><br>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CLO0Ow4S_C8"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="alacarte">
+        <h3>Alacarte</h3>
+        <div class="card-group">
+            <div class="card">
+                <img src="salaatti1.jpg" class="card-img-top" alt="Salaatit">
+                <div class="card-body">
+                    <h5 class="card-title">Salaatit</h5>
+                    <p class="card-text">Alkuruokana maistuu raikas salaatti. Voit tilata salaatin myös pääruoaksi,
+                        jolloin annos on suurempi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="keitto3.jpg" class="card-img-top" alt="Salaatit">
+                <div class="card-body">
+                    <h5 class="card-title">Keitot</h5>
+                    <p class="card-text">Lämmin keitto on kevyt vaihtoehto. Valikoimistamme löytyy kasvi-, kala- ja
+                        lihakeittoja kauden mukaisista raaka-aineista.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="annos11.jpg" class="card-img-top" alt="Salaatit">
+                <div class="card-body">
+                    <h5 class="card-title">Pääruoka</h5>
+                    <p class="card-text">Pääruokana löytyy huolella valmistettuja kasvi-, kala- ja liharuokia.
+                        Ateriaa
+                        täydentää runsas valikoima lisukkeita.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="makea5.jpg" class="card-img-top" alt="Salaatit">
+                <div class="card-body">
+                    <h5 class="card-title">Jälkiruoka</h5>
+                    <p class="card-text">Aterian päätteeksi maistuu makea leivonnainen kahvin kera.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="juomat">
+        <h3>Juomat</h3>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            Kahvit
+                        </a>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body accordion-card">
+                        <div class="row">
+                            <div class="col-md-6"> Tosi hyvää tummapaahtoista kahvia! Slurp!</div>
+                            <div class="col-md-6"><img src="kahvi4.jpg" alt="tummakahvi" class="juomakuva"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                            Oluet
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body accordion-card">
+                        <div class="row">
+                            <div class="col-md-6"><img src="juoma4.jpg" alt="vehnäolut" class="juomakuva"></div>
+                            <div class="col-md-6">Vähän parempaa bisseä!<br>Rairai!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                            Viinit
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body accordion-card">
+                        <div class="row">
+                            <div class="col-sm-4"><img src="juoma3.jpg" alt="vaaleaaviiniä" class="juomakuva"></div>
+                            <div class="col-sm-4">Kaikki värit löytyy!</div>
+                            <div class="col-sm-4"><img src="juoma8.jpg" alt="punaistaviiniä" class="juomakuva"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="yhteystiedot">
+        <h3>Yhteystiedot</h3>
+        <p>Pöytävarauksen Ticoon voit tehdä kätevästi verkossa tai perinteisesti puhelimitse.
+            Vastaamme mielellämme myös kaikkiin ravintolaamme koskeviin kysymyksiisi ja
+            autamme sinua suunnittelemaan onnistuneen tapahtuman suuremmallekin ryhmälle!</p>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Nimi</th>
+                        <th>Tehtävä</th>
+                        <th>Sähköposti</th>
+                        <th>Puhelin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anna Malli</td>
+                        <td>Ravintolapäällikkö</td>
+                        <td>anna.malli@ticorestaurant.com</td>
+                        <td>044 440 444</td>
+                    </tr>
+                    <tr>
+                        <td>Essi Merkki</td>
+                        <td>Hovimestari</td>
+                        <td>essi.merkki@ticorestaurant.com</td>
+                        <td>044 441 555</td>
+                    </tr>
+                    <tr>
+                        <td>Minna Mallikas</td>
+                        <td>Salivastaava</td>
+                        <td>minna.mallikas@ticorestaurant.com</td>
+                        <td>044 442 666</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="palauteform" onsubmit="return false">
+            <form id="form1">
+                <label class="muoto1" for="nimi">Nimi:</label>
+                <input type="text" id="nimi" name="nimi" required><br>
+
+                <label class="muoto1" for="sposti">Sähköposti:</label>
+                <input type="email" id="sposti" name="sposti" required><br>
+
+                <label class="muoto1" for="puhelin">Puhelin:</label>
+                <input type="tel" id="puhelin" name="puhelin" pattern="\+?[0-9 () \-]+"><br><br>
+
+                <label class="muoto1" for="palaute">Palaute:</label>
+                <textarea id="palaute" name="palaute" rows="4" cols="30"
+                    placeholder="Ihan paras paikka, vai mitä?"></textarea><br><br>
+
+                Arviosi sivustostamme:<br>
+                <input type="radio" id="parhaat" name="arvio" value="parhaat">
+                <label class="muoto2" for="parhaat"> ihan parhaat</label><br>
+                <input type="radio" id="menettelee" name="arvio" value="menettelee">
+                <label class="muoto2" for="menettelee"> no menettelee</label><br>
+                <input type="radio" id="kehno" name="arvio" value="kehno">
+                <label class="muoto2" for="kehno"> jos on pakko, niin käytän</label><br>
+                <input type="radio" id="huonoin" name="arvio" value="huonoin">
+                <label class="muoto2" for="huonoin"> ei ikinä enää tänne</label><br><br>
+
+                Mitä haluaisit lisää?<br>
+                <input type="checkbox" id="kuvia" name="lisättävä" value="kuvia">
+                <label class="muoto2" for="kuvia"> kuvia</label><br>
+                <input type="checkbox" id="reseptejä" name="lisättävä" value="reseptejä">
+                <label class="muoto2" for="reseptejä"> reseptejä</label><br>
+                <input type="checkbox" id="tapahtumia" name="lisättävä" value="tapahtumia">
+                <label class="muoto2" for="tapahtumia"> tietoa tapahtumista</label><br>
+                <input type="checkbox" id="arvioita" name="lisättävä" value="arvioita">
+                <label class="muoto2" for="arvioita"> muiden asiakkaiden arvioita</label><br><br>
+
+                <label for="löytyikö">Löysitkö etsimäsi sivuiltamme?</label><bR>
+                <select name="löytyikö" id="löytyikö">
+                    <option value="kyllä">Kyllä</option>
+                    <option value="ei">En</option>
+                    <option value="ehkä">En ole varma</option>
+                </select><br><br>
+
+                <input type="submit" value="Lähetä" onclick="annaPalaute()">
+                <input type="reset" value="Tyhjennä">
+            </form>
+        </div>
+
+        <div id="kiitospalautteesta"></div>
+
+        <script type="text/javascript">
+            function annaPalaute() {
+                var nimi = document.getElementById("nimi").value;
+                var sposti = document.getElementById("sposti").value;
+                var puhelin = document.getElementById("puhelin").value;
+                var palaute = document.getElementById("palaute").value;
+
+                var arvio = "Arviosi sivustostamme: ";
+                var radios = document.getElementsByName("arvio");
+                for (var i = 0, length = radios.length; i < length; i++) {
+                    if (radios[i].checked) {
+                        arvio = arvio + radios[i].value;
+                        break;
+                    }
+                }
+
+                var lisättävä = "Haluaisit sivulle lisää ";
+                var boxit = document.getElementsByName("lisättävä");
+                for (var i = 0, length = boxit.length; i < length; i++) {
+                    if (boxit[i].checked) {
+                        lisättävä = lisättävä + boxit[i].value + ", ";
+                    }
+                }
+                lisättävä = lisättävä.slice(0, (lisättävä.length - 2));
+
+                var löytyikö = "Löysitkö mitä etsit? "
+                var x = document.getElementById("löytyikö").selectedIndex;
+                var y = document.getElementById("löytyikö").options;
+                löytyikö = löytyikö + y[x].text;
+
+
+                document.getElementById("kiitospalautteesta").innerHTML = "Kiitos palautteesta " + nimi +
+                    "<br>Yhteystietosi: " + sposti + ", " + puhelin + "<br>Palautteesi: " + palaute + "<br>" +
+                    arvio + "<br>" + lisättävä + "<br>" + löytyikö;
+            }
+        </script>
+        
+    </div>
+
+
+
+</body>
+
+</html>
